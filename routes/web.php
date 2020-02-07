@@ -34,7 +34,7 @@ Route::resource('/posts', 'PostController')->except('edit');
 //// 등록화면
 //Route::get('/posts/create', function() {
 //    return view('posts.create');
-//})->name('posts.create');
+//})->name('posts.create')->middleware('auth');
 //
 //// 저장
 //Route::post('/posts', function (Request $request) {

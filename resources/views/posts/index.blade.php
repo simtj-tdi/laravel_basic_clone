@@ -2,12 +2,6 @@
 
 @section('content')
 
-    @if(Session::has('jsAlert'))
-        <script type="text/javascript" >
-            alert('{{ session()->get('jsAlert') }}');
-        </script>
-    @endif
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">

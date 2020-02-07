@@ -8,6 +8,11 @@ use App\Post;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only('create');
+    }
+
     //리스트화면
     public function index()
     {
@@ -19,11 +24,6 @@ class PostController extends Controller
     //등록화면
     public function create()
     {
-
-        if (is_null(Auth::user())) {
-            return redirect()->route('posts.index')->with('jsAlert', '로그인 후 작성이 가능합니다.');
-        }
-
         return view('posts.create');
     }
 
