@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! </br>
+                    My posts : {{ auth()->user()->posts()->count() }} </br>
+                    My comments : {{ auth()->user()->comments()->count() }}
                 </div>
             </div>
         </div>

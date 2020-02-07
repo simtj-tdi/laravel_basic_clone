@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Post;
@@ -30,6 +31,12 @@ class PostController extends Controller
     //저장
     public function store(Request $request)
     {
+        //검증(validation)
+        $request->validate([
+            'title' => 'required|min:3',
+            'content' => 'required',
+        ]);
+
         auth()->user()->posts()->create($request->all());
 
         return redirect()->route('posts.index');
@@ -46,6 +53,14 @@ class PostController extends Controller
     //수정
     public function update(Request $request, Post $post)
     {
+//        if (auth()->user()->id != $post->user_id) {
+//            echo "수정할 수 없습니다.";
+//            exit;
+//        }
+        $post->check();
+
+        exit;
+
         $post->update($request->all());
 
         return back();

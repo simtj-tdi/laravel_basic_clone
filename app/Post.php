@@ -24,4 +24,10 @@ class Post extends Model
     {
         return $this->belongsToMany('App\User');
     }
+
+    public function check()
+    {
+        // echo auth()->user()->id;
+        // echo $this->user_id;
+    }
 }

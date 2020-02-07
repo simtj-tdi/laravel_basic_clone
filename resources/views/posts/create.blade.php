@@ -16,7 +16,13 @@
                                 <label for="title" class="col-md-4 col-form-label text-md-right">Title</label>
 
                                 <div class="col-md-6">
-                                    <input id="title" type="text" class="form-control" name="title" value="" required autocomplete="name">
+                                    <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title', 'aa') }}" autocomplete="name">
+
+                                    @error('title')
+                                    <span class="text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
                                 </div>
                             </div>
 
@@ -24,7 +30,13 @@
                                 <label for="content" class="col-md-4 col-form-label text-md-right">Content</label>
 
                                 <div class="col-md-6">
-                                    <input id="content" type="text" class="form-control" name="content" value="" required autocomplete="content">
+                                    <input id="content" type="text" class="form-control @error('content') is-invalid @enderror" name="content" value="{{ old('content') }}" autocomplete="content">
+
+                                    @error('content')
+                                    <span class="text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
                                 </div>
                             </div>
 

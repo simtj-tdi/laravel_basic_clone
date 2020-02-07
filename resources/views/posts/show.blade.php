@@ -51,7 +51,7 @@
                         <ul class="list-group">
                             @foreach($post->comments()->orderByDesc('id')->get() as $comment)
                                 <li class="list-group-item">
-                                    {{ $comment->content }}
+                                   {{ $comment->id }} --- {{ $comment->content }} - id : {{ $comment->user->name }} -
                                 </li>
                             @endforeach
                         </ul>
