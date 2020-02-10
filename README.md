@@ -2,22 +2,35 @@
 
 laravel 설치 및 서버 실행
 > composer create-project --prefer-dist laravel/laravel laravel
+>
 > composer require barryvdh/laravel-debugbar --dev
+>
 > php artisan serve
+
+laravel git clone
+> composer install
+>
+> cp .env.example .env
+>
+> php artisan key:gen
 
 http://127.0.0.1:8000/
 
 laravel auth 설치
 > php artisan list
+>
 > php artisan ui:auth
+>
 > php artisan ui bootstrap
+>
 > npm install && npm run dev
 
 laravel model 생성 및 가데이터 추가
 > php artisan make:model Test -m
 -- php artisan make:migration create_test_table --create=tests
+>
 > php artisan make:factory TestFactory --model=Test
-
+>
 > php artisan migrate:refresh --seed
 
 
