@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Comment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Post;
+use Illuminate\Support\Facades\Gate;
 
 class PostController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth')->only('create');
+        $this->authorizeResource('App\Post', 'post');
     }
 
     //리스트화면
@@ -53,17 +53,21 @@ class PostController extends Controller
     //수정
     public function update(Request $request, Post $post)
     {
-//        if (auth()->user()->id != $post->user_id) {
+//      $this->authorize('update', $post);
+//      $this->authorizeResource();
+
+//        if (Gate::allows('update', $post)) {
+//            $post->update($request->all());
+//
+//            return back();
+//        } else {
 //            echo "수정할 수 없습니다.";
 //            exit;
 //        }
-        $post->check();
 
-        exit;
+            $post->update($request->all());
 
-        $post->update($request->all());
-
-        return back();
+            return back();
     }
 
     //삭제
