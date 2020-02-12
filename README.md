@@ -54,3 +54,14 @@ laravel controller 생성
 
 laravel artisan 명령어
 > php artisan list
+
+JWT AUTH
+> https://jwt-auth.readthedocs.io/en/docs/
+>
+> composer require tymon/jwt-auth:1.0.0-rc.5
+>
+> php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+>
+> php artisan jwt:secret
+>
+> php artisan make:controller Authcontroller

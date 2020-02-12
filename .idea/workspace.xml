@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c59634a-0b88-49a2-aec9-4e5faf9b3882" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +118,11 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNhLjNfKIBjmz7fI8mRl59Dtcs" />
@@ -137,6 +146,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,7 +174,8 @@
       <workItem from="1580977176835" duration="4352000" />
       <workItem from="1581036740977" duration="18674000" />
       <workItem from="1581304744136" duration="146000" />
-      <workItem from="1581389434511" duration="11162000" />
+      <workItem from="1581389434511" duration="15754000" />
+      <workItem from="1581469100374" duration="4173000" />
     </task>
     <servers />
   </component>
@@ -172,10 +183,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2050" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1581412374229">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2050" y="243" key="#com.intellij.ide.util.MemberChooser/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581412374229" />
     <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580977147798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580977147798" />
+    <state x="1928" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581413607553">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1928" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581413607553" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580977158069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,6 +215,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580965873696" />
+    <state x="1970" y="290" width="540" height="524" key="StructurePopup" timestamp="1581411595438">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1970" y="290" width="540" height="524" key="StructurePopup/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581411595438" />
+    <state x="1933" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1581469101565">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1933" y="384" key="com.intellij.ide.util.TipDialog/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581469101565" />
     <state x="1920" y="187" width="639" height="729" key="find.popup" timestamp="1581406805270">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
