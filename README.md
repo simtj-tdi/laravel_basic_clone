@@ -17,6 +17,8 @@ laravel git clone
 http://127.0.0.1:8000/
 
 laravel auth 설치
+> composer require laravel/ui --dev
+>
 > php artisan list
 >
 > php artisan ui:auth
