@@ -26,6 +26,11 @@ class ChangePasswordController extends Controller
             'new_confirm_password' => ['same:new_password']
         ]);
 
+        if (!Hash::check($request->current_password, auth()->user()->password)) {
+            dd('Cuurent Password Check');
+        }
+
+
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
 
         dd('Password change successfully.');
