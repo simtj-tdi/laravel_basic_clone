@@ -23,12 +23,13 @@ laravel auth 설치
 >
 > php artisan ui:auth
 >
-> php artisan ui bootstrap
->
 > npm install && npm run dev
+>
+> php artisan ui bootstrap
 
 laravel model 생성 및 가데이터 추가
 > php artisan make:model Test -m
+>
 -- php artisan make:migration create_test_table --create=tests
 >
 > php artisan make:factory TestFactory --model=Test
