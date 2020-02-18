@@ -1,5 +1,4 @@
 
-
 laravel 설치 및 서버 실행
 > composer create-project --prefer-dist laravel/laravel laravel
 >
@@ -26,7 +25,9 @@ laravel auth 설치
 > npm install && npm run dev
 >
 > php artisan ui bootstrap
-
+>
+> composer require laravelcollective/html
+>
 laravel model 생성 및 가데이터 추가
 > php artisan make:model Test -m
 >
@@ -68,3 +69,8 @@ JWT AUTH
 > php artisan jwt:secret
 >
 > php artisan make:controller Authcontroller
+
+laravel-permission
+> https://docs.spatie.be/laravel-permission/v3/basic-usage/super-admin/
+>
+> https://www.itsolutionstuff.com/post/laravel-6-user-roles-and-permissions-from-scratch-laravel-6-aclexample.html
