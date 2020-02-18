@@ -28,6 +28,8 @@ laravel auth 설치
 >
 > composer require laravelcollective/html
 >
+> composer require laravel/helpers
+>
 laravel model 생성 및 가데이터 추가
 > php artisan make:model Test -m
 >
