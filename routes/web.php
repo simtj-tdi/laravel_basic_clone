@@ -25,6 +25,13 @@ Route::post('change-password', 'ChangePasswordController@store')->name('change.p
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+    Route::resource('products','ProductController');
+});
+
+
 Route::resource('/posts', 'PostController')->except('edit');
 
 //// 리스트화면
