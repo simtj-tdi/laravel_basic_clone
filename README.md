@@ -31,11 +31,17 @@ laravel auth 설치
 > composer require laravel/helpers
 >
 laravel model 생성 및 가데이터 추가
-> php artisan make:model Test -m
+> php artisan make:model Board
 >
--- php artisan make:migration create_test_table --create=tests
+> php artisan make:migration create_boards_table  (table 생성)
 >
-> php artisan make:factory TestFactory --model=Test
+> php artisan migrate
+>
+> php artisan make:factory BoardFactory --model=Board
+>
+> php artisan make:seed BoardsTableSeeder
+>
+> php artisan db:seed --class=BoardsTableSeeder   (데이터 생성)
 >
 > php artisan migrate:refresh --seed
 
