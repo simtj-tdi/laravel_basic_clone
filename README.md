@@ -44,8 +44,27 @@ laravel model 생성 및 가데이터 추가
 > php artisan db:seed --class=BoardsTableSeeder   (데이터 생성)
 >
 > php artisan migrate:refresh --seed
-
-
+>
+>  ------------------------------------
+>
+>php artisan make:model Todo -all
+>
+>-c, --controller Create a new controller for the model
+>
+>-f, --factory Create a new factory for the model
+>
+>--force Create the class even if the model already exists
+>
+>-m, --migration Create a new migration file for the model
+>
+>-s, --seed Create a new seeder file for the model
+>
+>-p, --pivot Indicates if the generated model should be a custom inte rmediate table model
+>
+>-r, --resource Indicates if the generated controller should be a resour ce controller
+>
+>  ------------------------------------
+>
 > php artisan tinker
 
 User::find(1)->likes()->attach(2)
