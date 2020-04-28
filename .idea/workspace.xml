@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c59634a-0b88-49a2-aec9-4e5faf9b3882" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,8 +146,7 @@
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
       <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
-      <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
-      <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/torann/geoip" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNhLjNfKIBjmz7fI8mRl59Dtcs" />
@@ -286,18 +289,20 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1933" y="384" key="com.intellij.ide.util.TipDialog/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581555374263" />
-    <state x="1920" y="187" width="639" height="729" key="find.popup" timestamp="1581406805270">
-      <screen x="1280" y="23" width="1920" height="1057" />
+    <state x="-601" y="-901" width="639" height="694" key="find.popup" timestamp="1588042450326">
+      <screen x="-1241" y="-1057" width="1920" height="1006" />
     </state>
     <state x="1920" y="187" width="639" height="729" key="find.popup/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1581406805270" />
+    <state x="-601" y="-901" width="639" height="694" key="find.popup/0.23.1280.777/-1241.-1057.1920.1006/679.-1057.1920.1057@-1241.-1057.1920.1006" timestamp="1588042450326" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580964399281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580964399281" />
-    <state x="1905" y="202" width="670" height="676" key="search.everywhere.popup" timestamp="1582000029685">
-      <screen x="1280" y="23" width="1920" height="1057" />
+    <state x="-616" y="-887" width="670" height="644" key="search.everywhere.popup" timestamp="1588042825688">
+      <screen x="-1241" y="-1057" width="1920" height="1006" />
     </state>
     <state x="1905" y="202" width="670" height="676" key="search.everywhere.popup/0.23.1280.726/1280.23.1920.1057@1280.23.1920.1057" timestamp="1582000029685" />
+    <state x="-616" y="-887" width="670" height="644" key="search.everywhere.popup/0.23.1280.777/-1241.-1057.1920.1006/679.-1057.1920.1057@-1241.-1057.1920.1006" timestamp="1588042825688" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />

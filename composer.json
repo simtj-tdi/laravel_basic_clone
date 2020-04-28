@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.0",
         "spatie/laravel-permission": "^3.7",
+        "torann/geoip": "^1.2",
         "tymon/jwt-auth": "1.0.0-rc.5"
     },
     "require-dev": {
